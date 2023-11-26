@@ -1,0 +1,405 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Daisuki Atelier</title>
+    <link rel="stylesheet" href="produto.css">
+</head>
+
+<body>
+    <header>
+
+        <a href="index.html" id="titulo">DAISUKI ATELIER</a>
+
+        <div class="search-box">
+            <input type="text" placeholder="Pesquisa">
+            <img src="ÍCONES/HEADER/pesquisa_icon.png" alt="ícone de pesquisa" id="pesquisa_icon" class="headerimg">
+        </div>
+        <div id="icon_header">
+            <a href="favoritos_ingles.html" id="favoritos_icon"><img src="ÍCONES/favoritos_icon.png"
+                    alt="ícone de favoritos" class="headerimg"></a>
+
+            <a href="carrinho_ingles.html" class="nav" id="carrinho_icon"><img src="ÍCONES/HEADER/carrinho_icon.png"
+                    alt="ícone do carrinho" class="headerimg" style="margin-bottom: 8px;"></a>
+            <a href="perfil_ingles.html" class="nav" id="perfil_icon"><img src="ÍCONES/HEADER/perfil_icon.png"
+                    alt="ícone de perfil" class="headerimg"></a>
+            <a href="configuracoes_ingles.html" class="nav" id="configuracoes_icon">
+                <img src="ÍCONES/settings_icon.png" class="headerimg" alt="ícone das configurações"></a>
+
+            <div class="mobile-menu-icon">
+                <button onclick="menuShow()"><img class="icon" src="ÍCONES/menu_icon(1).png" alt="menu-icon"></button>
+            </div>
+        </div>
+
+    </header>
+    <div class="mobile-menu">
+        <ul>
+            <li class="nav-item"><a href="index.html" class="nav-link">HOME</a></li>
+            <li class="nav-item"> <a href="quemsomos.html" class="nav-link">QUEM SOMOS</a>
+            </li>
+            <li class="nav-item"><a href="ajuda_ingles.html" class="nav-link">HELP & FEEDBACK</a></li>
+            <li class="nav-item"><a href="receitas_ingles.html" class="nav-link">RECEITAS</a></li>
+            <li class="nav-item"> <a href="perfil_ingles.html" class="nav-link"> PERFIL</a></li>
+        </ul>
+    </div>
+    <nav>
+        <div id="menu_nav">
+            <a href="index_ingles.html">HOME</a>
+            <span class="entrenav">|</span>
+            <a href="quemsomos_ingles.html">ABOUT US</a>
+            <span class="entrenav">|</span>
+            <a href="receitas_ingles.html">RECIPES</a>
+            <span class="entrenav">|</span>
+            <a href="ajuda_ingles.html">HELP & FEEDBACK</a>
+        </div>
+    </nav>
+    <main>
+        <div id="cxgaleria">
+            <div id="cxfoto">
+                <div id="principal">
+                    <div id="ampliada">
+                        <img src="IMAGENS/BONECAS/img05.jpg" alt="imagem6" id="imgampliada"
+                            onmouseover="ampliar('IMAGENS/BONECAS/img05.jpg')">
+                    </div>
+                    <div id="galeria">
+                        <div class="fotogaleria">
+                            <img src="IMAGENS/BONECAS/img05.jpg" alt="imagem1"
+                                onmouseover="ampliar('IMAGENS/BONECAS/img05.jpg')"><!--quando clicar na imagem vai chamar o ampliar, e o foto.jpg vai cair na variável imagem-->
+                        </div>
+                        <div class="fotogaleria">
+                            <img src="IMAGENS/BONECAS/img05.jpg" alt="imagem2"
+                                onmouseover="ampliar('IMAGENS/BONECAS/img05.jpg')">
+                        </div>
+                        <div class="fotogaleria">
+                            <img src="IMAGENS/BONECAS/img05.jpg" alt="imagem5"
+                                onmouseover="ampliar('IMAGENS/BONECAS/img05.jpg')">
+                        </div>
+                        <div class="fotogaleria">
+                            <img src="IMAGENS/BONECAS/img05.jpg" alt="imagem4"
+                                onmouseover="ampliar('IMAGENS/BONECAS/img05.jpg')">
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+            <div id="cxpreco">
+                <div id="texto">
+                    <h1 id="nome-prod">Fairy Doll Amigurumi-Dolls Amigurumi</h1>
+                    <h2 id="preco-prod">R$67,30 ou 10x de R$6,73</h2>
+                </div>
+                <div id="cx-quantprod">
+                    <button class="btn-quant" id="btn-mais">+</button>
+                    <div id="espaco-quantdiv"></div>
+                    <button class="btn-quant" id="btn-menos">-</button>
+                </div>
+                <div id="cx-frete">
+                    <div id="cx01-frete">
+                        <p>
+                            <label for="cep">CEP:</label>
+                            <input type="text" name="cep" id="cep" size="9" maxlength="10"><br>
+                            <!--se type for = number só vai aceitar n[um]-->
+                            <label for="estado">State:</label>
+                            <select name="estado" id="estado">
+                                <option value="SP">São Paulo</option>
+                                <option value="RJ">RioJaneiro</option>
+                                <option value="PR">Paraná</option>
+                                <option value="PA"> Pará</option>
+                                <option value="MT">Mato Grosso</option>
+                                <option value="MS"> Mato Grosso Sul</option>
+                                <option value="AM">Amazonas</option>
+                                <option value="MA">Maranhão</option>
+                                <option value="RR">Roraima</option>
+                                <option value="AC">Acre</option>
+                                <option value="ES">Espírito Santos</option>
+                                <option value="MG">Minas Gerais</option>
+                            </select>
+ 
+ 
+                        </p>
+                    </div>
+                    <div id="cx02-frete">
+                        <p>
+                            <button> Freight</button>
+                        </p>
+ 
+                    </div>
+                </div>
+                <div id="cx-btn">
+                    <button onclick="comprar" id="btn-compra">BUY</button>
+                    <button id="btn-add-carrinho"><img src="ÍCONES/icon-addcarrinho.png"
+                            alt="ícone de adicionar item no carrinho"></button>
+                    <button id="btn-add-favoritos"> <img src="ÍCONES/favoritos_icon.png"
+                            alt="ícone de adicionar aos favoritos">
+
+                    </button>
+                </div>
+            </div>
+        </div>
+        <div id="cxinfo">
+            <h1>The Product Informations</h1>
+            <h3>Product Name: Fairy Doll Amigurumi</h3>
+            <h3>Colors: Green, brown</h3>
+            <h3>Height: 20cm</h3>
+            <h3>width: 15cm</h3>
+
+            <h3>Raw material: cottom wool, fiber filling </h3>
+        </div>
+        <div id="cxavalia">
+            <div id="cx-estrela">
+                <div>
+                    <h3>Products Avaliation</h3>
+                </div>
+                <div id="cx-classifica">
+                    <div class="avalia-estrela">All</div>
+                    <span class="entrenav">|</span>
+                    <div class="avalia-estrela">5 Stars</div>
+                    <span class="entrenav">|</span>
+                    <div class="avalia-estrela">4 Stars</div>
+                    <span class="entrenav">|</span>
+                    <div class="avalia-estrela">3 Stars</div>
+                    <span class="entrenav">|</span>
+                    <div class="avalia-estrela">2 Stars</div>
+                    <span class="entrenav">|</span>
+                    <div class="avalia-estrela">1 Star</div>
+                </div>
+
+
+            </div>
+            <div id="cx-coment"></div>
+
+        </div>
+
+
+
+        <div id="cxanuncio">
+            <a href="bonecos_ingles.html" id="link-voltar">
+                <h3>Look at similar products:</h3>
+            </a>
+            <div class="cxtipo" id="cxtipo1">
+                <button id="prevBtn1" class="btn-arrasta"><img src="ÍCONES/setaesquerda_icon.png" class="imgarrasta"
+                        alt="prevBtn"></button>
+                        <div class="carousel-slide">
+                            <div class="divcxprod">
+                                <div class="cxprod-separa">
+                                    <div class="cxprod">
+                                        <div class="cxprod-img">
+                                            <img src="IMAGENS/BONECAS/img01.jpeg" alt="Imagem do Produto">
+                                        </div>
+                                        <div class="cxprod-info">
+                                            <div class="cxprod-prec-btn">
+                                                <div class="preco-div">
+                                                    <h5>R$94,09</h5>
+                                                </div>
+                                                <div class="btn-fav">
+                                                    <button class="favoritar"><img src="ÍCONES/favoritos_icon.png"
+                                                            alt="botãofavorito"></button>
+                                                </div>
+                                            </div>
+                                            <div class="cxprod-nome">
+                                                <a href="produto-boneco01_ingles.html">Baby Amigurumi-<br>Amigurumi Dolls</a>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="cxprod">
+                                        <div class="cxprod-img">
+                                            <img src="IMAGENS/BONECAS/img02.jpeg" alt="Imagem do Produto">
+                                        </div>
+                                        <div class="cxprod-info">
+                                            <div class="cxprod-prec-btn">
+                                                <div class="preco-div">
+                                                    <h5>R$40,50</h5>
+                                                </div>
+                                                <div class="btn-fav">
+                                                    <button class="favoritar"><img src="ÍCONES/favoritos_icon.png"
+                                                            alt="botãofavorito"></button>
+                                                </div>
+                                            </div>
+                                            <div class="cxprod-nome">
+                                                <a href="produto-boneco02_ingles.html">Avocado Amigurumi-<br>Amigurumi Dolls</a>
+                                            </div>
+                                        </div>
+                                    </div>
+                
+                                    <div class="cxprod-separa">
+                                        <div class="cxprod">
+                                            <div class="cxprod-img">
+                                                <img src="IMAGENS/BONECAS/img03.jpeg" alt="Imagem do Produto">
+                                            </div>
+                                            <div class="cxprod-info">
+                                                <div class="cxprod-prec-btn">
+                                                    <div class="preco-div">
+                                                        <h5>R$42,80</h5>
+                                                    </div>
+                                                    <div class="btn-fav">
+                                                        <button class="favoritar"><img src="ÍCONES/favoritos_icon.png"
+                                                                alt="botãofavorito"></button>
+                                                    </div>
+                                                </div>
+                                                <div class="cxprod-nome">
+                                                    <a href="produto-boneco03_ingles.html">Fox Doll Amigurumi-<br>Amigurumi Dolls</a>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="cxprod">
+                                            <div class="cxprod-img">
+                                                <img src="IMAGENS/BONECAS/img04.jpeg" alt="Imagem do Produto">
+                                            </div>
+                                            <div class="cxprod-info">
+                                                <div class="cxprod-prec-btn">
+                                                    <div class="preco-div">
+                                                        <h5>R$34,60</h5>
+                                                    </div>
+                                                    <div class="btn-fav">
+                                                        <button class="favoritar"><img src="ÍCONES/favoritos_icon.png"
+                                                                alt="botãofavorito"></button>
+                                                    </div>
+                                                </div>
+                                                <div class="cxprod-nome">
+                                                    <a href="produto-boneco04_ingles.html">Doll Amigurumi-<br>Amigurumi Dolls</a>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                
+                        <div class="carousel-slide">
+                            <div class="divcxprod">
+                                <div class="cxprod-separa">
+                                    <div class="cxprod">
+                                        <div class="cxprod-img">
+                                            <img src="IMAGENS/BONECAS/img05.jpg" alt="Imagem do Produto">
+                                        </div>
+                                        <div class="cxprod-info">
+                                            <div class="cxprod-prec-btn">
+                                                <div class="preco-div">
+                                                    <h5>R$67,30</h5>
+                                                </div>
+                                                <div class="btn-fav">
+                                                    <button class="favoritar"><img src="ÍCONES/favoritos_icon.png"
+                                                            alt="botãofavorito"></button>
+                                                </div>
+                                            </div>
+                                            <div class="cxprod-nome">
+                                                <a href="produto-boneco05_ingles.html">Fairy Doll Amigurumi-<br>Amigurumi Dolls</a>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="cxprod">
+                                        <div class="cxprod-img">
+                                            <img src="IMAGENS/BONECAS/img06.jpg" alt="Imagem do Produto">
+                                        </div>
+                                        <div class="cxprod-info">
+                                            <div class="cxprod-prec-btn">
+                                                <div class="preco-div">
+                                                    <h5>R$43,60</h5>
+                                                </div>
+                                                <div class="btn-fav">
+                                                    <button class="favoritar"><img src="ÍCONES/favoritos_icon.png"
+                                                            alt="botãofavorito"></button>
+                                                </div>
+                                            </div>
+                                            <div class="cxprod-nome">
+                                                <a href="produto-boneco06_ingles.html">Amigurumi Doll-<br>Amigurumi Dolls</a>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="cxprod-separa">
+                                    <div class="cxprod">
+                                        <div class="cxprod-img">
+                                            <img src="IMAGENS/BONECAS/img07.jpg" alt="Imagem do Produto">
+                                        </div>
+                                        <div class="cxprod-info">
+                                            <div class="cxprod-prec-btn">
+                                                <div class="preco-div">
+                                                    <h5>R$230,90</h5>
+                                                </div>
+                                                <div class="btn-fav">
+                                                    <button class="favoritar"><img src="ÍCONES/favoritos_icon.png"
+                                                            alt="botãofavorito"></button>
+                                                </div>
+                                            </div>
+                                            <div class="cxprod-nome">
+                                                <a href="produto-boneco07_ingles.html">Dolls Amigurumi Kit-<br>Amigurumi Dolls</a>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="cxprod">
+                                        <div class="cxprod-img">
+                                            <img src="IMAGENS/BONECAS/img08.jpg" alt="Imagem do Produto">
+                                        </div>
+                                        <div class="cxprod-info">
+                                            <div class="cxprod-prec-btn">
+                                                <div class="preco-div">
+                                                    <h5>R$42,10</h5>
+                                                </div>
+                                                <div class="btn-fav">
+                                                    <button class="favoritar"><img src="ÍCONES/favoritos_icon.png"
+                                                            alt="botãofavorito"></button>
+                                                </div>
+                                            </div>
+                                            <div class="cxprod-nome">
+                                                <a href="produto-boneco08_ingles.html">Amigurumi Doll-<br>Amigurumi Dolls</a>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>              <button id="nextBtn1" class="btn-arrasta"><img src="ÍCONES/setadireita_icon.png"
+                        alt="ícone de seta para a direita" class="imgarrasta"></button>
+
+            </div>
+        </div>
+    </main>
+    <footer>
+        <div id="cxfooter1">
+            <div class="cxfooter" id="menu_footer">
+
+                <a href="index_ingles.html">HOME</a>
+
+                <a href="quemsomos_ingles.html">ABOUT US</a>
+
+                <a href="receitas_ingles.html">RECIPES</a>
+
+                <a href="ajuda_ingles.html">HELP & FEEDBACK</a>
+
+            </div>
+            <div class="cxfooter" id="quemsomos">
+                <h5>DAISUKI ATELIER</h5>
+                <p>We are a creative atelier dedicated to producing various unique pieces. <br>
+                    Our passion for craftsmanship motivates us to create objects that express beauty and "daisuki," the
+                    love.</p>
+            </div>
+        </div>
+        <div id="cxfooter2"></div>
+        <div id="cxfooter3">
+            <div class="cxfooter3" id="cxdireitos">
+
+                <div id="copyr-cx"></div>
+                <p>Copyright &copy; DAISUKI ATELIER</p>
+                <a href="#">Terms of Use</a>
+                <span class="entrenav">|</span>
+                <a href="#">Privacy Policy</a>
+
+            </div>
+
+
+            <div class="cxfooter3" id="cxredes">
+                <a href="https://www.instagram.com/daisuki.atelie/"><img src="ÍCONES/insta_icon.png" alt="instagram"
+                        class="redesimg" id="insta_icon"></a>
+                <a href="#"><img src="ÍCONES/what_icon.png" alt="whats" class="redesimg" id="what_icon"></a>
+                <a href="#"><img src="ÍCONES/face_icon.png" alt="facebook" class="redesimg" id="face_icon"></a>
+            </div>
+        </div>
+    </footer>
+
+    <script src="produto.js">
+    </script>
+
+</body>
+
+</html>

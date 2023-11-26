@@ -1,0 +1,1233 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Daisuki Ateliê| HOME</title>
+    <link rel="shortcut icon" type="image/png"
+        href="file:///home/joana/Downloads/menu_FILL0_wght400_GRAD0_opsz48(1)(1).png">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+    <link rel="stylesheet" href="daisukidesign.css">
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Montserrat&display=swap');
+        @import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@200;400&display=swap');
+
+        * {
+            margin: 0 auto;
+            font-family: 'Montserrat', sans-serif;
+
+        }
+
+        header {
+            background-color: #626e8e;
+            height: 100px;
+            width: 100%;
+            text-align: center;
+            display: flex;
+            align-items: center;
+        }
+
+        header a#titulo {
+            color: #fff;
+            text-decoration: none;
+            font-size: 30px;
+            font-family: 'Montserrat', sans-serif;
+            font-weight: bold;
+        }
+
+        header img.headerimg {
+
+            height: 35px;
+            display: block;
+            margin: 1px;
+            transition: 0.5s ease;
+
+        }
+
+        header img.headerimg:hover {
+            filter: invert(10%);
+            height: 35px;
+
+        }
+
+        /* Estilo da caixa de busca */
+        .search-box {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            max-width: 400px;
+            width: 400px;
+            margin: 0 auto;
+        }
+
+        /* Estilo do campo de busca */
+        header div.search-box input[type="text"] {
+            width: 100%;
+            padding: 10px;
+            font-size: 16px;
+            border: 1px solid #ccc;
+            border-radius: 30px;
+        }
+
+        /* Estilo do botão de busca */
+        header div.search-box button {
+            padding: 10px;
+            font-size: 16px;
+            background-color: #626e8e;
+            color: #fff;
+            border: none;
+            border-radius: 30px;
+            cursor: pointer;
+        }
+
+
+
+        #menu_icon {
+            display: none;
+        }
+
+        header a {
+            margin: 10px;
+        }
+
+        .nav-list {
+            display: flex;
+            align-items: center;
+        }
+
+        .nav-list ul {
+            display: flex;
+            justify-content: center;
+            list-style: none;
+        }
+
+        .nav-item {
+            margin: 0 15px;
+        }
+
+        .nav-link {
+            text-decoration: none;
+            font-size: 1.15rem;
+            color: #fff;
+            font-weight: 400;
+        }
+
+
+
+        .mobile-menu-icon {
+            display: none;
+        }
+
+        .mobile-menu {
+            display: none;
+        }
+
+        header button#menu-icon {
+            display: none;
+
+        }
+
+
+        nav {
+            height: 50px;
+            background-color: #7a86a7;
+            color: #fff;
+            font-size: 20px;
+            font-family: 'Montserrat', sans-serif;
+            text-align: center;
+            align-items: center;
+            display: flex;
+            position: sticky;
+            z-index: 1000;
+            top: 0;
+
+        }
+
+        nav a {
+            color: #fff;
+            text-decoration: none;
+            margin: 10px;
+            font-size: 23px;
+            font-family: 'Montserrat', sans-serif;
+            margin: 10px;
+            transition: color 0.3s ease;
+            text-align: center;
+            align-items: center;
+
+
+        }
+
+        nav a:hover {
+            color: #626e8e;
+            text-decoration: none;
+            font-family: 'Montserrat', sans-serif;
+            margin: 10px;
+
+
+        }
+
+        main {
+            background-color: #c3cae0;
+            height: 2700px;
+            width: 100%;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            color: #7d88aa;
+            text-align: right;
+        }
+
+        div#cxgaleria {
+            width: 100%;
+            height: 40%;
+            background-color: #AAB4D1;
+            display: flex;
+            flex-direction: row;
+            margin-top: 50px;
+
+        }
+
+
+        div#cxfoto {
+            height: 100%;
+            width: 50%;
+            background-color: #AAB4D1;
+            display: flex;
+            align-items: center;
+        }
+
+        #principal {
+            background-color: #ff0303;
+            display: flex;
+            align-items: center;
+            flex-direction: column;
+            height: 600px;
+            width: 75%;
+            border-radius: 10px;
+            margin-top: -30px;
+
+        }
+
+        #ampliada {
+            height: 80%;
+            background-color: #626E8E;
+            width: 100%;
+            border-top-right-radius: 10px;
+            border-top-left-radius: 10px;
+            display: flex;
+            align-items: center;
+        }
+
+        #galeria {
+            display: flex;
+            background-color: #7A86A7;
+            height: 20%;
+            width: 100%;
+            flex-direction: row;
+            border-bottom-right-radius: 10px;
+
+            border-bottom-left-radius: 10px;
+
+        }
+
+        #ampliada img {
+            height: 450px;
+        }
+
+        .fotogaleria img {
+            height: 100px;
+            margin: 5px;
+            border-radius: 10px;
+        }
+
+        div#galeria img:hover {
+            cursor: pointer;
+            transform: scale(1);
+        }
+
+        div#ampliada img {
+            border-radius: 10px;
+
+        }
+
+        div#cxpreco {
+            height: 70%;
+            width: 50%;
+            background-color: #AAB4D1;
+            display: flex;
+            flex-direction: column;
+            text-align: start;
+            align-items: start;
+        }
+
+        div#cxpreco div {
+            margin: 10px;
+        }
+
+        div#texto {
+            height: 20%;
+            width: 100%;
+            display: flex;
+            flex-direction: column;
+            text-align: start;
+        }
+
+        h1#nome-prod {
+            font-size: 25px;
+            font-weight: bold;
+            color: #ffffff;
+            align-items: start;
+        }
+
+        h2#preco-prod {
+            font-size: 25px;
+            color: #39425e;
+            align-items: start;
+        }
+
+        div#cx-tpprod {
+            height: 25%;
+            width: 90%;
+            background-color: #626e8e;
+            border-radius: 5px;
+            padding: 5px;
+            box-sizing: border-box;
+            display: flex;
+            align-items: center;
+        }
+
+        div#cx-quantprod {
+            height: 12%;
+            width: 24%;
+            background-color: #ffffff;
+            display: flex;
+            border-radius: 10px;
+
+        }
+
+        div button.btn-quant {
+            height: 100%;
+            width: 40%;
+            align-items: center;
+            background-color: #626e8e;
+            border: none;
+            color: #fff;
+            font-size: 30px;
+
+        }
+
+        div#espaco-quantdiv {
+            height: 100%;
+            width: 30%;
+
+        }
+
+        div#cx-frete {
+            height: 20%;
+            width: 65%;
+            background-color: #626e8e;
+            display: flex;
+        }
+
+        div#cx-btn {
+            height: 15%;
+            width: 90%;
+            background-color: #AAB4D1;
+            display: flex;
+            flex-direction: row;
+            align-items: center;
+
+
+
+        }
+
+        div#cx-btn button {
+
+            box-sizing: border-box;
+            height: 60px;
+            border-radius: 5px;
+            margin: 15px;
+            align-items: center;
+
+        }
+
+        button img {
+            height: 30px;
+        }
+
+        button#btn-compra {
+            background-color: #3e465c;
+            border: none;
+            color: #fff;
+            transition: 0.3s ease;
+            width: 100px;
+        }
+
+        button#btn-compra:hover {
+            background-color: #333a52;
+            color: #e0e0e0;
+
+        }
+
+        button#btn-compra:active {
+            background-color: #292f42;
+            color: #e0e0e0;
+        }
+
+        button#btn-add-carrinho {
+            background-color: #626e8e;
+            border: #626e8e;
+            width: 60px;
+        }
+
+        button#btn-add-favoritos {
+            background-color: #626e8e;
+            border: #626e8e;
+            width: 60px;
+
+        }
+
+        button#btn-add-box {
+            background-color: #626e8e;
+            border: #626e8e;
+            width: 60px;
+        }
+
+        div#cxinfo {
+            width: 95%;
+            height: 25%;
+            background-color: #AAB4D1;
+            color: #3e465c;
+            font-weight: bold;
+            display: flex;
+            margin-top: 30px;
+            text-align: start;
+            flex-direction: column;
+
+
+        }
+
+        div#cxinfo h3 {
+            color: #3e465c;
+            font-weight: bold;
+            font-size: 20px;
+            margin: 15px;
+        }
+
+        div#cxavalia {
+            width: 85%;
+            height: 30%;
+            display: flex;
+            border-radius: 10px;
+            margin: 25px;
+            flex-direction: column;
+
+        }
+
+        div#cx-estrela {
+            height: 15%;
+            width: 100%;
+            border-top-right-radius: 10px;
+            border-top-left-radius: 10px;
+            background-color: #626e8e;
+            display: flex;
+            flex-direction: row;
+            align-items: center;
+            color: #fff;
+            font-size: 18px;
+        }
+
+        div.avalia-estrela:hover {
+            color: #9ca9ce;
+            transition: 0.8s ease;
+            font-size: 16px;
+            cursor: pointer;
+            box-sizing: border-box;
+
+        }
+
+        div#cx-coment {
+            height: 85%;
+            width: 100%;
+            background-color: #ffffff;
+            border-bottom-right-radius: 10px;
+            border-bottom-left-radius: 10px;
+
+        }
+
+        div#cxanuncio {
+            height: 30%;
+            width: 100%;
+            background-color: #AAB4D1;
+            display: flex;
+            align-items: start;
+            flex-direction: column;
+            margin-top: 50px;
+        }
+
+        div#cxanuncio h3 {
+            color: #fff;
+
+        }
+
+        /*ver mais*/
+        div.cxtipo {
+            background-color: #929ec0;
+            width: 92%;
+            height: 360px;
+            margin-top: 20px;
+            display: flex;
+            flex-direction: row;
+            border-radius: 10px;
+            align-items: center;
+
+        }
+
+        .imgarrasta:hover {
+            filter: invert(5%);
+            transition: 0.5s;
+        }
+
+        div.divcxprod {
+            display: flex;
+            flex-direction: row;
+            background-color: #929ec0;
+            height: 360px;
+            width: 100%;
+            align-items: center;
+        }
+
+        div.cxprod {
+            background-color: #ffffff;
+            width: 244px;
+            height: 340px;
+            margin: 7px;
+            display: flex;
+            align-items: center;
+            flex-direction: column;
+            text-align: center;
+            border-radius: 5px;
+            transition: 0.5s;
+            cursor: pointer;
+
+        }
+
+        div.cxprod:hover {
+            width: 250px;
+            height: 355px;
+            box-shadow: 10px 10px 10px rgba(74, 83, 110, 0.6);
+            transition: 0.5s;
+
+        }
+
+        div.cxprod a:hover {
+            color: #384974;
+            transition: 0.5s;
+
+        }
+
+        div.cxprod-img {
+            height: 70%;
+            width: 100%;
+        }
+
+        div.cxprod-img img {
+            height: 244px;
+            width: 100%;
+            border-top-right-radius: 5px;
+            border-top-left-radius: 5px;
+
+        }
+
+        div.cxprod-info {
+            flex-direction: column;
+            color: #7c89aa;
+            display: flex;
+            height: 30%;
+            width: 100%;
+
+        }
+
+        div.cxprod-prec-btn {
+            height: 50%;
+            flex-direction: row;
+            display: flex;
+            background-color: rgb(255, 255, 255);
+            width: 100%;
+            font-size: 30px;
+            color: #384974;
+            text-align: left;
+            align-items: center;
+            font-family: 'Montserrat', sans-serif;
+            font-family: 'Open Sans', sans-serif;
+            font-family: 'Playfair Display', serif;
+            font-family: 'Poppins', sans-serif;
+
+        }
+
+        div#preco-div {
+            text-align: left;
+            display: flex;
+            box-sizing: border-box;
+            padding-left: 5px;
+        }
+
+        div#btn-fav {
+            width: 75%;
+            display: flex;
+            align-items: center;
+            box-sizing: border-box;
+            padding-left: 70px;
+            background-color: rgb(255, 255, 255);
+
+        }
+
+        button#favoritar img {
+            height: 35px;
+        }
+
+        button#favoritar {
+            height: 100%;
+            width: 50px;
+            background-color: #aebada;
+
+        }
+
+        div.cxprod-nome {
+            flex: 50%;
+            background-color: rgb(250, 255, 250);
+            text-align: left;
+            font-size: 15px;
+            border-radius: 5px;
+            font-family: 'Montserrat', sans-serif;
+            font-family: 'Open Sans', sans-serif;
+            font-family: 'Playfair Display', serif;
+            font-family: 'Poppins', sans-serif;
+
+        }
+
+        div.cxprod-nome a {
+
+            text-decoration: none;
+            box-sizing: border-box;
+            color: #536ba7;
+            text-align: justify;
+        }
+
+        div.cxprod-nome a:hover {
+
+            text-decoration: underline;
+            box-sizing: border-box;
+            color: #283453;
+            font-weight: 200;
+            transition: 0.5s;
+
+        }
+
+        button {
+
+            width: 50px;
+            border: none;
+            background-color: #929ec0;
+            border-radius: 5px;
+
+        }
+
+        button#prevBtn {
+            border-top-left-radius: 10px;
+            border-bottom-left-radius: 10px;
+        }
+
+        button#nextBtn {
+            border-top-right-radius: 10px;
+            border-bottom-right-radius: 10px;
+        }
+
+        button#favoritar img {
+            height: 35px;
+        }
+
+        button#favoritar {
+            height: 100%;
+            width: 50px;
+            background-color: #aebada;
+        }
+        /*ver mais*/
+
+
+        footer {
+            height: 400px;
+            width: 100%;
+            background-color: #626e8e;
+            display: flex;
+            font-family: 'Montserrat', sans-serif;
+            flex-direction: column;
+            color: #fff;
+        }
+
+        footer a {
+            text-decoration: none;
+            color: #fff;
+            transition: color 0.3s ease;
+            margin: 5px;
+        }
+
+        footer a:hover {
+            text-decoration: none;
+            color: rgb(50, 57, 78);
+        }
+
+        footer div#cxfooter1 {
+            width: 100%;
+            height: 70%;
+            display: flex;
+            flex-direction: row;
+            align-items: center;
+        }
+
+        div#cxfooter1 div#menu {
+            width: 15%;
+            height: 80%;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            text-align: justify;
+        }
+
+        div#cxfooter1 div#menu a {
+            line-height: 50px;
+        }
+
+        div#cxfooter1 div#quemsomos {
+            width: 60%;
+            height: 90%;
+            font-size: 20px;
+            display: flex;
+            align-items: center;
+            flex-direction: column;
+            line-height: 35px;
+            text-align: justify;
+        }
+
+        footer div#cxfooter2 {
+            background-color: #3e465c;
+            width: 100%;
+            height: 0.3%;
+        }
+
+        footer div#cxfooter3 {
+            width: 100%;
+            height: 29%;
+            display: flex;
+            flex-direction: row;
+            align-items: center;
+        }
+
+        #cxfooter3 div#cxdireitos {
+            width: 45%;
+            height: 50%;
+        }
+
+        #cxfooter3 div#cxredes {
+            width: 30%;
+            height: 80%;
+            display: flex;
+            flex-direction: row;
+            align-items: center;
+        }
+
+        #cxfooter3 div#cxredes img {
+            height: 50px;
+            margin: 15px;
+        }
+
+        @media only screen and (max-width:700px) {
+            div.search-box,
+            nav,
+            #perfil_icon {
+                display: none;
+
+            }
+
+            header {
+
+                height: 90px;
+            }
+
+            header a#titulo {
+                font-size: 25px;
+            }
+
+            .headerimg {
+                height: 30px;
+
+
+            }
+
+            img#img-menu_mobile {
+                margin-top: 30px;
+                height: 20px;
+            }
+
+
+            .nav-item {
+                display: none;
+            }
+
+            .mobile-menu-icon {
+                display: block;
+            }
+
+            .mobile-menu-icon button {
+                background-color: transparent;
+                border: none;
+                cursor: pointer;
+            }
+
+            div.mobile-menu {
+                height: 250px;
+                background-color: #7a86a7;
+                color: #fff;
+                font-size: 20px;
+                text-align: center;
+
+            }
+
+            .mobile-menu ul {
+                display: flex;
+                flex-direction: column;
+                text-align: center;
+                padding-bottom: 1rem;
+            }
+
+            .mobile-menu .nav-item {
+                display: block;
+                padding-top: 1.2rem;
+            }
+
+            .open {
+                display: block;
+            }
+
+        }
+    </style>
+
+</head>
+
+<body>
+    <header>
+
+        <a href="index.html" id="titulo">DAISUKI ATELIÊ</a>
+
+        <div class="search-box">
+            <input type="text" placeholder="Pesquisa">
+            <img src="ÍCONES/HEADER/pesquisa_icon.png" alt="icon pesquisa" id="pesquisa_icon" class="headerimg">
+        </div>
+        <a href="favoritos.html"><img src="ÍCONES/favoritos_icon.png" class="headerimg"></a>
+
+        <a href="carrinho.html" class="nav" id="carrinho_icon(1)"><img src="ÍCONES/HEADER/carrinho_icon.png" alt=""
+                class="headerimg"></a>
+        <a href="perfil.html" class="nav" id="perfil_icon"><img src="ÍCONES/HEADER/perfil_icon.png" class="headerimg"
+                style="margin-bottom:8px ;"></a>
+        <a href="configuracoe.html" class="nav" id="configuracoes_icon">
+            <img src="ÍCONES/settings_icon.png" class="headerimg" style="margin-bottom:8px ;"></a>
+
+        <div class="mobile-menu-icon">
+            <button onclick="menuShow()"><img class="icon" src="menu_icon(1).png" alt="menu-icon"></button>
+        </div>
+
+    </header>
+    <div class="mobile-menu">
+        <ul>
+            <li class="nav-item"><a href="index.html" class="nav-link">HOME</a></li>
+            <li class="nav-item"> <a href="quemsomos.html" class="nav-link">QUEM SOMOS</a>
+            </li>
+            <li class="nav-item"><a href="receitas.html" class="nav-link">RECEITAS</a></li>
+            <li class="nav-item"> <a href="perfil.html" class="nav-link"> PERFIL</a></li>
+        </ul>
+
+
+    </div>
+    <nav>
+        <div class="menu" id="menu">
+            <a href="index.html">HOME</a>
+            <span class="entrenav">|</span>
+            <a href="quemsomos.html">QUEM SOMOS</a>
+            <span class="entrenav">|</span>
+            <a href="receitas.html">RECEITAS</a>
+            <span class="entrenav">|</span>
+            <a href="ajuda.html">AJUDA & FEEDBACK</a>
+        </div>
+
+    </nav>
+    <main>
+        <div id="cxgaleria">
+            <div id="cxfoto">
+                <div id="principal">
+                    <div id="ampliada">
+                        <img src="foto6.jfif" alt="imagem6" id="imgampliada" onmouseover="ampliar('foto6.jfif')">
+                    </div>
+                    <div id="galeria">
+                        <div class="fotogaleria">
+                            <img src="foto1.jpg" alt="imagem1"
+                                onmouseover="ampliar('foto1.jpg')"><!--quando clicar na imagem vai chamar o ampliar, e o foto.jpg vai cair na variável imagem-->
+                        </div>
+                        <div class="fotogaleria">
+                            <img src="foto2.jpg" alt="imagem2" onmouseover="ampliar('foto2.jpg')">
+                        </div>
+                        <div class="fotogaleria">
+                            <img src="foto5.jpg" alt="imagem5" onmouseover="ampliar('foto5.jpg')">
+                        </div>
+                        <div class="fotogaleria">
+                            <img src="foto4.jfif" alt="imagem4" onmouseover="ampliar('foto4.jfif')">
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+            <div id="cxpreco">
+                <div id="texto">
+                    <h1 id="nome-prod">Coelho de Amigurumi-Amigurumi</h1>
+                    <h2 id="preco-prod">R$235,50 ou 10x de 23,55</h2>
+                </div>
+                <div id="cx-tpprod"></div>
+                <div id="cx-quantprod">
+                    <button class="btn-quant">+</button>
+                    <div id="espaco-quantdiv"></div>
+                    <button class="btn-quant">-</button>
+                </div>
+                <div id="cx-frete"></div>
+                <div id="cx-btn">
+                    <button onclick="comprar" id="btn-compra">COMPRAR</button>
+                    <button id="btn-add-carrinho"><img src="ÍCONES\icon-addcarrinho.png" alt="ícone de adicionar item no carrinho"></button>
+                    <button id="btn-add-favoritos"> <img src="ÍCONES\favoritos_icon.png" alt="ícone de adicionar aos favoritos">
+
+                    </button>
+                </div>
+            </div>
+        </div>
+        <div id="cxinfo">
+            <h1>Informações do Produto</h1>
+            <h3>Nome do Produto:</h3>
+            <h3>Cores Disponíveis:</h3>
+            <h3>Altura:</h3>
+            <h3>Largura:</h3>
+            <h3>Comprimento:</h3>
+            <h3>Matéria Prima:</h3>
+        </div>
+        <div id="cxavalia">
+            <div id="cx-estrela">
+                <div>
+                    <h3>Avaliações do Produto</h3>
+                </div>
+                <div class="avalia-estrela">Todos</div>
+                <span class="entrenav">|</span>
+                <div class="avalia-estrela">5 Estrelas</div>
+                <span class="entrenav">|</span>
+                <div class="avalia-estrela">4 Estrelas</div>
+                <span class="entrenav">|</span>
+                <div class="avalia-estrela">3 Estrelas</div>
+                <span class="entrenav">|</span>
+                <div class="avalia-estrela">2 Estrelas</div>
+                <span class="entrenav">|</span>
+                <div class="avalia-estrela">1 Estrelas</div>
+
+
+
+            </div>
+            <div id="cx-coment"></div>
+
+        </div>
+
+
+
+        <div id="cxanuncio">
+            <h3>Veja Produtos Semelhantes:</h3>
+
+            <div class="cxtipo" id="cxtipo1">
+                <button id="prevBtn1"><img src="ÍCONES\setaesquerda_icon.png" class="imgarrasta"></button>
+                <div class="carousel-slide">
+                    <div class="divcxprod">
+                        <div class="cxprod">
+                            <div class="cxprod-img">
+                                <img src="img1.jpg"
+                                    alt="">
+                            </div>
+                            <div class="cxprod-info">
+                                <div class="cxprod-prec-btn">
+                                    <div id="preco-div">
+                                        <h5>R$22,00</h5>
+                                    </div>
+                                    <div id="btn-fav">
+                                        <button id="favoritar"><img src="ÍCONES\favoritos_icon.png"
+                                                alt="botãofavorito"></button>
+                                    </div>
+                                </div>
+                                <div class="cxprod-nome">
+                                    <a href="">Amigurumi de Unicórnio-<br>Amigurumi de Animais</a>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="cxprod">
+                            <div class="cxprod-img">
+                                <img src="img2.jpeg"
+                                    alt="">
+                            </div>
+                            <div class="cxprod-info">
+                                <div class="cxprod-prec-btn">
+                                    <div id="preco-div">
+                                        <h5>R$22,00</h5>
+                                    </div>
+                                    <div id="btn-fav">
+                                        <button id="favoritar"><img src="ÍCONES\favoritos_icon.png"
+                                                alt="botãofavorito"></button>
+                                    </div>
+                                </div>
+                                <div class="cxprod-nome">
+                                    <a href="">Amigurumi de Unicórnio-<br>Amigurumi de Animais</a>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="cxprod">
+                            <div class="cxprod-img">
+                                <img src="img3.jpeg"
+                                    alt="">
+                            </div>
+                            <div class="cxprod-info">
+                                <div class="cxprod-prec-btn">
+                                    <div id="preco-div">
+                                        <h5>R$22,00</h5>
+                                    </div>
+                                    <div id="btn-fav">
+                                        <button id="favoritar"><img src="ÍCONES\favoritos_icon.png"
+                                                alt="botãofavorito"></button>
+                                    </div>
+                                </div>
+                                <div class="cxprod-nome">
+                                    <a href="">Amigurumi de Unicórnio-<br>Amigurumi de Animais</a>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="cxprod">
+                            <div class="cxprod-img">
+                                <img src="img5.jpeg"
+                                    alt="">
+                            </div>
+                            <div class="cxprod-info">
+                                <div class="cxprod-prec-btn">
+                                    <div id="preco-div">
+                                        <h5>R$22,00</h5>
+                                    </div>
+                                    <div id="btn-fav">
+                                        <button id="favoritar"><img src="ÍCONES\favoritos_icon.png"
+                                                alt="botãofavorito"></button>
+                                    </div>
+                                </div>
+                                <div class="cxprod-nome">
+                                    <a href="">Amigurumi de Unicórnio-<br>Amigurumi de Animais</a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+    
+                <div class="carousel-slide">
+                    <div class="divcxprod">
+                        <div class="cxprod">
+                            <div class="cxprod-img">
+                                <img src="img6.jpeg"
+                                    alt="">
+                            </div>
+                            <div class="cxprod-info">
+                                <div class="cxprod-prec-btn">
+                                    <div id="preco-div">
+                                        <h5>R$22,00</h5>
+                                    </div>
+                                    <div id="btn-fav">
+                                        <button id="favoritar"><img src="ÍCONES\favoritos_icon.png"
+                                                alt="botãofavorito"></button>
+                                    </div>
+                                </div>
+                                <div class="cxprod-nome">
+                                    <a href="">Amigurumi de Unicórnio-<br>Amigurumi de Animais</a>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="cxprod">
+                            <div class="cxprod-img">
+                                <img src="img7.jpeg"
+                                    alt="">
+                            </div>
+                            <div class="cxprod-info">
+                                <div class="cxprod-prec-btn">
+                                    <div id="preco-div">
+                                        <h5>R$22,00</h5>
+                                    </div>
+                                    <div id="btn-fav">
+                                        <button id="favoritar"><img src="ÍCONES\favoritos_icon.png"
+                                                alt="botãofavorito"></button>
+                                    </div>
+                                </div>
+                                <div class="cxprod-nome">
+                                    <a href="">Amigurumi de Unicórnio-<br>Amigurumi de Animais</a>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="cxprod">
+                            <div class="cxprod-img">
+                                <img src="img8.jpeg"
+                                    alt="">
+                            </div>
+                            <div class="cxprod-info">
+                                <div class="cxprod-prec-btn">
+                                    <div id="preco-div">
+                                        <h5>R$22,00</h5>
+                                    </div>
+                                    <div id="btn-fav">
+                                        <button id="favoritar"><img src="ÍCONES\favoritos_icon.png"
+                                                alt="botãofavorito"></button>
+                                    </div>
+                                </div>
+                                <div class="cxprod-nome">
+                                    <a href="">Amigurumi de Unicórnio-<br>Amigurumi de Animais</a>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="cxprod">
+                            <div class="cxprod-img">
+                                <img src="img10.jpeg"
+                                    alt="">
+                            </div>
+                            <div class="cxprod-info">
+                                <div class="cxprod-prec-btn">
+                                    <div id="preco-div">
+                                        <h5>R$22,00</h5>
+                                    </div>
+                                    <div id="btn-fav">
+                                        <button id="favoritar"><img src="ÍCONES\favoritos_icon.png"
+                                                alt="botãofavorito"></button>
+                                    </div>
+                                </div>
+                                <div class="cxprod-nome">
+                                    <a href="">Amigurumi de Unicórnio-<br>Amigurumi de Animais</a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+    
+                <button id="nextBtn1"><img src="ÍCONES\setadireita_icon.png" class="imgarrasta"></button>
+            </div>
+    </main>
+
+    <footer>
+        <div id="cxfooter1">
+            <div class="cxfooter" id="menu">
+
+                <a href="indeX.html">HOME</a>
+
+                <a href="quemsomos.html">QUEM SOMOS</a>
+
+                <a href="receitas.html">RECEITAS</a>
+
+                <a href="ajuda.html">AJUDA & FEEDBACK</a>
+
+            </div>
+            <div class="cxfooter" id="quemsomos">
+                <h5>DAISUKI ATELIÊ</h2>
+                    <p>Somos um ateliê criativo dedicado a produzir diversas peças únicas. <br>
+                        Nossa paixão pelo artesanato nos motiva a criar objetos que expressam beleza e "daisuki", o
+                        amor.</p>
+            </div>
+
+        </div>
+        <div id="cxfooter2"></div>
+        <div id="cxfooter3">
+            <div class="cxfooter3" id="cxdireitos">
+
+                <div id="copyr-cx"></div>
+                <p>Copyright &copy; DAISUKI ATELIÊ</p>
+                <a href="#">Termos de Uso</a>
+                <span class="entrenav">|</span>
+                <a href="#">Política de Privacidade</a>
+
+            </div>
+            <div class="cxfooter3" id="cxredes">
+                <a href=""><img src="ÍCONES\REDES\insta_icon.png" alt="instagram" class="redesimg" id="insta_icon"></a>
+                <a href=""><img src="ÍCONES\REDES\what_icon.png" alt="whats" class="redesimg" id="what_icon"></a>
+                <a href=""><img src="ÍCONES\REDES\face_icon.png" alt="facebook" class="redesimg" id="face_icon"></a>
+            </div>
+        </div>
+    </footer>
+</body>
+
+
+<script>
+    function ampliar(imagem) {//o src é a imagem
+        document.getElementById("imgampliada").src = imagem;
+        document.getElementById("imgampliada").style.border = "solid white 3px";
+        document.getElementById("imgampliada").style.borderRadius = "30px";
+        document.getElementById("imgampliada").style.boxShadow = "5px 10px 15px 0px rgb(0,0,0)";
+
+    }
+
+    function initializeCarousel() {
+    let currentSlide = 0;
+    const slides = document.querySelectorAll('.cxtipo .carousel-slide');
+    const prevButton = document.getElementById('prevBtn1');
+    const nextButton = document.getElementById('nextBtn1');
+
+    function showSlide(index) {
+        slides.forEach((slide, i) => {
+            if (i === index) {
+                slide.style.display = 'block';
+            } else {
+                slide.style.display = 'none';
+            }
+        });
+    }
+
+    function nextSlide() {
+        currentSlide++;
+        if (currentSlide >= slides.length) {
+            currentSlide = 0;
+        }
+        showSlide(currentSlide);
+    }
+
+    function prevSlide() {
+        currentSlide--;
+        if (currentSlide < 0) {
+            currentSlide = slides.length - 1;
+        }
+        showSlide(currentSlide);
+    }
+
+    // Configurar os botões de próxima e anterior
+    nextButton.addEventListener('click', nextSlide);
+    prevButton.addEventListener('click', prevSlide);
+
+    // Exibir o slide inicial
+    showSlide(currentSlide);
+}
+
+// Chame a função para inicializar o carrossel
+initializeCarousel();
+
+function menuShow() {
+            let menuMobile = document.querySelector('.mobile-menu');
+            if (menuMobile.classList.contains('open')) {
+                menuMobile.classList.remove('open');
+                document.querySelector('.icon').src = "menu_icon(1).png";
+            } else {
+                menuMobile.classList.add('open');
+                document.querySelector('.icon').src = "/media/joana/F696-C2CA/1º DS/Ensino Técnico/PW/TCM_Amigurumi/Páginas/fechar_icon.svg";
+            }
+        }
+
+</script>
+
+
+</html>

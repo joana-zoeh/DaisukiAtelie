@@ -1,0 +1,519 @@
+
+@import url('https://fonts.googleapis.com/css2?family=Montserrat&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@200;400&display=swap');
+
+* {
+    margin: 0 auto;
+    font-family: 'Montserrat', sans-serif;
+
+}
+
+header {
+    background-color: #626e8e;
+    height: 100px;
+    width: 100%;
+    text-align: center;
+    display: flex;
+    align-items: center;
+}
+
+header a#titulo {
+    color: #fff;
+    text-decoration: none;
+    font-size: 30px;
+}
+
+header div#icon_header {
+    height: 35px;
+    display: flex;
+    align-items: center;
+    flex-direction: row;
+    width: 220px;
+    text-align: center;
+}
+
+
+header img.headerimg {
+
+    height: 35px;
+    display: block;
+    transition: 0.5s ease;
+    margin-left: 10px;
+
+}
+
+header img.headerimg:hover {
+    filter: invert(5%);
+    height: 35px;
+}
+
+a#favoritos_icon img{
+    margin-bottom: 6px;
+
+}
+
+a#carrinho_icon img {
+    margin-bottom: 10px;
+
+}
+/* Estilo da caixa de busca */
+.search-box {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    max-width: 400px;
+    width: 400px;
+
+}
+
+/* Estilo do campo de busca */
+header div.search-box input[type="text"] {
+    width: 100%;
+    padding: 10px;
+    font-size: 16px;
+    border: 1px solid #ccc;
+    border-radius: 30px;
+}
+
+/* Estilo do botão de busca */
+header div.search-box button {
+    padding: 10px;
+    font-size: 16px;
+    background-color: #626e8e;
+    color: #fff;
+    border: none;
+    border-radius: 30px;
+    cursor: pointer;
+}
+
+
+
+.nav-list {
+    display: flex;
+    align-items: center;
+}
+
+.nav-list ul {
+    display: flex;
+    justify-content: center;
+    list-style: none;
+}
+
+.nav-item {
+    margin: 0 15px;
+}
+
+.nav-link {
+    text-decoration: none;
+    font-size: 1.15rem;
+    color: #fff;
+    font-weight: 400;
+}
+
+
+
+.mobile-menu-icon {
+    display: none;
+}
+
+.mobile-menu {
+    display: none;
+}
+
+header button#menu-icon {
+    display: none;
+
+}
+
+nav {
+    height: 50px;
+    background-color: #7a86a7;
+    color: #fff;
+    font-size: 20px;
+    font-family: 'Montserrat', sans-serif;
+    text-align: center;
+    align-items: center;
+    display: flex;
+    position: sticky;
+    z-index: 1000;
+    top: 0;
+
+}
+
+nav a {
+    color: #fff;
+    text-decoration: none;
+    margin: 10px;
+    font-size: 23px;
+    font-family: 'Montserrat', sans-serif;
+    margin: 10px;
+    transition: color 0.3s ease;
+    text-align: center;
+    align-items: center;
+
+
+}
+
+nav a:hover {
+    color: #626e8e;
+    text-decoration: none;
+    font-family: 'Montserrat', sans-serif;
+    margin: 10px;
+
+
+}
+
+main {
+    height: 800px;
+    display: flex;
+    background-color: #c3cae0;
+
+
+}
+
+main div#cxperfil {
+    height: 500px;
+    width: 39%;
+    background-color: #8694b9;
+    display: flex;
+    flex-direction: column;
+    border-radius: 10px;
+    text-align: left;
+    box-shadow: 10px 10px 10px rgba(74, 83, 110, 0.6);
+    margin-top: 70px;
+}
+
+div#infoperfil label, span{
+    color: white;
+
+}
+
+span{
+    margin-bottom: 20px;
+}
+
+div#espacofoto {
+    border-radius: 100px;
+    height: 150px;
+    align-items: center;
+    margin-top: 20px;
+}
+
+#perfilfoto {
+    border-radius: 100px;
+    background-color: white;
+    height: 150px;
+}
+
+div a.funcoesperfil {
+    text-decoration: none;
+    text-align: justify;
+    color: white;
+    transition: color 0.3s ease;
+    line-height: 30px;
+}
+
+div a.funcoesperfil:hover {
+    text-decoration: solid;
+    text-align: left;
+    color: #535f80;
+    transition: 0.5s;
+}
+
+a img#logout {
+    height: 17px;
+}
+
+div#confiperfil {
+    line-height: 35px;
+}
+
+footer {
+    height: 400px;
+    width: 100%;
+    background-color: #626e8e;
+    display: flex;
+    font-family: 'Montserrat', sans-serif;
+    flex-direction: column;
+    color: #fff;
+
+}
+
+footer a {
+    text-decoration: none;
+    color: #fff;
+    transition: color 0.3s ease;
+    margin: 5px;
+
+}
+
+footer a:hover {
+    text-decoration: none;
+    color: rgb(50, 57, 78);
+
+}
+
+footer div#cxfooter1 {
+
+    width: 100%;
+    height: 70%;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+
+}
+
+div#cxfooter1 div#menu_footer {
+    width: 15%;
+    height: 80%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: justify;
+
+
+}
+
+div#cxfooter1 div#menu_footer a {
+    line-height: 50px;
+}
+
+div#cxfooter1 div#quemsomos {
+    width: 60%;
+    height: 90%;
+    font-size: 20px;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    line-height: 35px;
+    text-align: justify;
+
+
+}
+
+footer div#cxfooter2 {
+    background-color: #3e465c;
+    width: 100%;
+    height: 0.3%;
+
+}
+
+footer div#cxfooter3 {
+    width: 100%;
+    height: 29%;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+
+}
+
+#cxfooter3 div#cxdireitos {
+    width: 45%;
+    height: 50%;
+
+
+
+
+}
+
+#cxfooter3 div#cxredes {
+    width: 30%;
+    height: 80%;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+
+
+}
+
+#cxfooter3 div#cxredes img {
+    height: 50px;
+    margin: 15px;
+
+
+}
+
+@media only screen and (max-width:700px) {
+
+    div.search-box,
+    nav,
+    #perfil_icon {
+        display: none;
+
+    }
+
+    header {
+
+        height: 90px;
+    }
+
+    header a#titulo {
+        font-size: 22px;
+    }
+
+    .headerimg {
+        height: 30px;
+    }
+
+    a#configuracoes_icon img,
+    #carrinho_icon img {
+        margin-bottom: 8px;
+        margin-right: 3px;
+    }
+
+    #favoritos_icon img {
+        margin-bottom: 8px;
+    }
+
+    header div#icon_header {
+        height: 20px;
+        display: flex;
+        align-items: center;
+        flex-direction: row;
+        width: 200px;
+        margin-left: 40px;
+        text-align: center;
+
+    }
+
+    header div#icon_header img {
+        height: 30px;
+
+    }
+    img#img-menu_mobile {
+        margin-top: 30px;
+        height: 20px;
+    }
+
+
+    .nav-item {
+        display: none;
+    }
+
+    .mobile-menu-icon {
+        display: block;
+    }
+
+    .mobile-menu-icon button {
+        background-color: transparent;
+        border: none;
+        cursor: pointer;
+    }
+
+    div.mobile-menu {
+        height: 310px;
+        background-color: #7a86a7;
+        color: #fff;
+        font-size: 20px;
+        text-align: center;
+    }
+
+    .mobile-menu ul {
+        display: flex;
+        flex-direction: column;
+        text-align: center;
+        padding-bottom: 1rem;
+    }
+
+    .mobile-menu .nav-item {
+        display: block;
+        padding-top: 1.2rem;
+    }
+
+    .open {
+        display: block;
+    }
+
+    main div#cxperfil {
+        height: 600px;
+        width: 80%;
+        display: flex;
+        flex-direction: column;
+        border-radius: 10px;
+        text-align: left;
+
+
+    }
+
+    footer {
+        height: 400px;
+        width: 100%;
+        background-color: #626e8e;
+        display: flex;
+
+        flex-direction: column;
+    }
+
+    footer div#cxfooter1 {
+
+        width: 100%;
+        height: 70%;
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+    }
+
+    div#cxfooter1 div#menu_footer {
+        width: 45%;
+        height: 85%;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        text-align: left;
+        font-size: 12px;
+        line-height: 30px;
+
+
+    }
+
+    div#cxfooter1 div#menu_footer a {
+        line-height: 50px;
+    }
+
+    div#cxfooter1 div#quemsomos {
+        width: 49%;
+        height: 80%;
+        font-size: 12px;
+        display: flex;
+        align-items: center;
+        flex-direction: column;
+        line-height: 30px;
+        text-align: justify;
+    }
+
+    footer div#cxfooter2 {
+        background-color: #3e465c;
+        width: 100%;
+        height: 0.2%;
+    }
+
+    footer div#cxfooter3 {
+        width: 100%;
+        height: 30%;
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+    }
+
+    #cxfooter3 div#cxdireitos {
+        width: 50%;
+        height: 35%;
+        font-size: 12px;
+    }
+
+    #cxfooter3 div#cxredes {
+        width: 41%;
+        height: 80%;
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+    }
+
+    #cxfooter3 div#cxredes img {
+        height: 29px;
+        margin: 8px;
+
+
+    }
+}
+
