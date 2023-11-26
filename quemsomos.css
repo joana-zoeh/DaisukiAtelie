@@ -1,0 +1,610 @@
+
+@import url('https://fonts.googleapis.com/css2?family=Montserrat&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@200;400&display=swap');
+
+* {
+    margin: 0 auto;
+    font-family: 'Montserrat', sans-serif;
+
+}
+
+header {
+    background-color: #626e8e;
+    height: 100px;
+    width: 100%;
+    text-align: center;
+    display: flex;
+    align-items: center;
+}
+
+header a#titulo {
+    color: #fff;
+    text-decoration: none;
+    font-size: 30px;
+}
+
+header div#icon_header {
+    height: 35px;
+    display: flex;
+    align-items: center;
+    flex-direction: row;
+    width: 220px;
+    text-align: center;
+}
+
+
+header img.headerimg {
+
+    height: 35px;
+    display: block;
+    transition: 0.5s ease;
+    margin-left: 10px;
+
+}
+
+header img.headerimg:hover {
+    filter: invert(5%);
+    height: 35px;
+}
+
+a#favoritos_icon img{
+    margin-bottom: 6px;
+
+}
+
+a#carrinho_icon img {
+    margin-bottom: 8px;
+
+}
+/* Estilo da caixa de busca */
+.search-box {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    max-width: 400px;
+    width: 400px;
+
+}
+
+/* Estilo do campo de busca */
+header div.search-box input[type="text"] {
+    width: 100%;
+    padding: 10px;
+    font-size: 16px;
+    border: 1px solid #ccc;
+    border-radius: 30px;
+}
+
+/* Estilo do botão de busca */
+header div.search-box button {
+    padding: 10px;
+    font-size: 16px;
+    background-color: #626e8e;
+    color: #fff;
+    border: none;
+    border-radius: 30px;
+    cursor: pointer;
+}
+
+
+
+.nav-list {
+    display: flex;
+    align-items: center;
+}
+
+.nav-list ul {
+    display: flex;
+    justify-content: center;
+    list-style: none;
+}
+
+.nav-item {
+    margin: 0 15px;
+}
+
+.nav-link {
+    text-decoration: none;
+    font-size: 1.15rem;
+    color: #fff;
+    font-weight: 400;
+}
+
+
+
+.mobile-menu-icon {
+    display: none;
+}
+
+.mobile-menu {
+    display: none;
+}
+
+header button#menu-icon {
+    display: none;
+
+}
+
+nav {
+    height: 50px;
+    background-color: #7a86a7;
+    color: #fff;
+    font-size: 20px;
+    font-family: 'Montserrat', sans-serif;
+    text-align: center;
+    align-items: center;
+    display: flex;
+    position: sticky;
+    z-index: 1000;
+    top: 0;
+
+}
+
+nav a {
+    color: #fff;
+    text-decoration: none;
+    margin: 10px;
+    font-size: 23px;
+    font-family: 'Montserrat', sans-serif;
+    margin: 10px;
+    transition: color 0.3s ease;
+    text-align: center;
+    align-items: center;
+
+
+}
+
+nav a:hover {
+    color: #626e8e;
+    text-decoration: none;
+    font-family: 'Montserrat', sans-serif;
+    margin: 10px;
+
+
+}
+
+
+main {
+    background-color: #c3cae0;
+    height: 1500px;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    color: #7d88aa;
+    text-align: justify;
+}
+
+main div.texto {
+    width: 60%;
+    padding-top: 20px;
+}
+
+main div#cxprodutos_quemsomos {
+    background-color: #7a86a7;
+    height: 250px;
+    width: 95%;
+    flex-direction: row;
+    display: flex;
+    border-radius: 10px;
+    margin-bottom: 30px;
+    box-shadow: 10px 10px 10px rgba(59, 66, 88, 0.6);
+}
+
+div.cxprod2 {
+    flex-direction: column;
+
+}
+
+div.cxprodtp {
+    height: 75%;
+    padding-top: 10px;
+    display: flex;
+    align-items: center;
+}
+
+img.imgquemsom {
+    height: 180px;
+    border-radius: 100px;
+    transition: 0.3s ease;
+    margin-bottom: 5px;
+    background-color: rgba(74, 83, 110, 0.6);
+
+}
+
+img.imgquemsom:hover {
+    height: 190px;
+    border-radius: 100px;
+    padding-bottom: 5px;
+    box-sizing: border-box;
+    box-shadow: 5px 5px 5px rgba(74, 83, 110, 0.575);
+
+}
+
+div.nometp {
+    display: flex;
+    align-items: center;
+    height: 25%;
+
+}
+
+div.nometp a {
+    color: #fff;
+    text-decoration: none;
+    transition: 0.3s ease;
+
+
+}
+
+div.nometp a:hover {
+    color: #364469;
+}
+
+main p {
+    font-size: 20px;
+    color: #4c5670;
+
+}
+
+main h1 {
+    color: #2b3242;
+    font-size: 45px;
+    text-align: center;
+    padding: 35px;
+    font-weight: 500;
+
+
+}
+
+div#cx_textoamigurumi {
+    display: flex;
+    flex-direction: row;
+    height: 400px;
+    margin-top: 90px;
+    width: 80%;
+    align-items: center;
+}
+
+div#cx_oqamigurumi {
+    width: 65%;
+    margin: 10px;
+}
+
+img#img_amigurumi {
+    border-radius: 5px;
+    box-shadow: 10px 10px 10px rgba(74, 83, 110, 0.6);
+    height: 300px;
+
+}
+
+
+footer {
+    height: 400px;
+    width: 100%;
+    background-color: #626e8e;
+    display: flex;
+    font-family: 'Montserrat', sans-serif;
+    flex-direction: column;
+    color: #fff;
+
+}
+
+footer a {
+    text-decoration: none;
+    color: #fff;
+    transition: color 0.3s ease;
+    margin: 5px;
+
+}
+
+footer a:hover {
+    text-decoration: none;
+    color: rgb(50, 57, 78);
+
+}
+
+footer div#cxfooter1 {
+
+    width: 100%;
+    height: 70%;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+
+}
+
+div#cxfooter1 div#menu_footer {
+    width: 15%;
+    height: 80%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: justify;
+
+
+}
+
+div#cxfooter1 div#menu_footer a {
+    line-height: 50px;
+}
+
+div#cxfooter1 div#quemsomos {
+    width: 60%;
+    height: 90%;
+    font-size: 20px;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    line-height: 35px;
+    text-align: justify;
+
+
+}
+
+footer div#cxfooter2 {
+    background-color: #3e465c;
+    width: 100%;
+    height: 0.3%;
+
+}
+
+footer div#cxfooter3 {
+    width: 100%;
+    height: 29%;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+
+}
+
+#cxfooter3 div#cxdireitos {
+    width: 45%;
+    height: 50%;
+
+
+
+
+}
+
+#cxfooter3 div#cxredes {
+    width: 30%;
+    height: 80%;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+
+
+}
+
+#cxfooter3 div#cxredes img {
+    height: 50px;
+    margin: 15px;
+
+
+}
+
+@media only screen and (max-width:700px) {
+
+    div.search-box,
+    nav,
+    #perfil_icon {
+        display: none;
+
+    }
+
+    header {
+
+        height: 90px;
+    }
+
+    header a#titulo {
+        font-size: 22px;
+    }
+
+    .headerimg {
+        height: 30px;
+    }
+
+    a#configuracoes_icon img,
+    #carrinho_icon img {
+        margin-bottom: 8px;
+        margin-right: 3px;
+    }
+
+    #favoritos_icon img {
+        margin-bottom: 8px;
+    }
+
+    header div#icon_header {
+        height: 20px;
+        display: flex;
+        align-items: center;
+        flex-direction: row;
+        width: 200px;
+        margin-left: 40px;
+        text-align: center;
+
+    }
+
+    header div#icon_header img {
+        height: 30px;
+
+    }
+    img#img-menu_mobile {
+        margin-top: 30px;
+        height: 20px;
+    }
+
+
+    .nav-item {
+        display: none;
+    }
+
+    .mobile-menu-icon {
+        display: block;
+    }
+
+    .mobile-menu-icon button {
+        background-color: transparent;
+        border: none;
+        cursor: pointer;
+    }
+
+    div.mobile-menu {
+        height: 310px;
+        background-color: #7a86a7;
+        color: #fff;
+        font-size: 20px;
+        text-align: center;
+    }
+
+    .mobile-menu ul {
+        display: flex;
+        flex-direction: column;
+        text-align: center;
+        padding-bottom: 1rem;
+    }
+
+    .mobile-menu .nav-item {
+        display: block;
+        padding-top: 1.2rem;
+    }
+
+    .open {
+        display: block;
+    }
+
+
+
+    main {
+        height: 2900px;
+    }
+
+    main h1 {
+        font-size: 20px;
+        margin-bottom: 25px;
+    }
+
+    main div#cxprodutos_quemsomos {
+        background-color: #7a86a7;
+        height: 1400px;
+        width: 55%;
+        flex-direction: column;
+
+    }
+
+    div.cxprod2 {
+        flex-direction: column;
+        height: 300px;
+
+    }
+
+    div.cxprodtp {
+        height: 155px;
+    }
+
+    div.cxprodtp img {
+        height: 150px;
+    }
+
+    div#cx_textoamigurumi {
+        display: flex;
+        flex-direction: column;
+        height: 400px;
+        margin-top: 90px;
+        width: 80%;
+        align-items: center;
+    }
+
+    div#cx_oqamigurumi {
+        width: 65%;
+        margin: 10px;
+    }
+
+    img#img_amigurumi {
+        border-radius: 5px;
+        box-shadow: 10px 10px 10px rgba(74, 83, 110, 0.6);
+        height: 300px;
+
+    }
+
+
+    footer {
+        height: 400px;
+        width: 100%;
+        background-color: #626e8e;
+        display: flex;
+
+        flex-direction: column;
+    }
+
+    footer div#cxfooter1 {
+
+        width: 100%;
+        height: 70%;
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+
+    }
+
+    div#cxfooter1 div#menu_footer {
+        width: 45%;
+        height: 85%;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        text-align: left;
+        font-size: 12px;
+        line-height: 30px;
+
+
+    }
+
+
+    div#cxfooter1 div#quemsomos {
+        width: 49%;
+        height: 80%;
+        font-size: 12px;
+        display: flex;
+        align-items: center;
+        flex-direction: column;
+        line-height: 30px;
+        text-align: justify;
+    }
+
+    footer div#cxfooter2 {
+        background-color: #3e465c;
+        width: 100%;
+        height: 0.2%;
+    }
+
+    footer div#cxfooter3 {
+        width: 100%;
+        height: 30%;
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+    }
+
+    #cxfooter3 div#cxdireitos {
+        width: 50%;
+        height: 35%;
+        font-size: 12px;
+    }
+
+    #cxfooter3 div#cxredes {
+        width: 41%;
+        height: 80%;
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+    }
+
+    #cxfooter3 div#cxredes img {
+        height: 29px;
+        margin: 8px;
+
+
+    }}
+

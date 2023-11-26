@@ -1,0 +1,408 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Daisuki Ateliê</title>
+    <link rel="stylesheet" href="produto.css">
+
+</head>
+
+
+<body>
+    <header>
+
+        <a href="index.html" id="titulo">DAISUKI ATELIÊ</a>
+
+        <div class="search-box">
+            <input type="text" placeholder="Pesquisa">
+            <img src="ÍCONES/HEADER/pesquisa_icon.png" alt="ícone de pesquisa" id="pesquisa_icon" class="headerimg">
+        </div>
+        <div id="icon_header">
+            <a href="favoritos.html" id="favoritos_icon"><img src="ÍCONES/favoritos_icon.png" alt="ícone de favoritos"
+                    class="headerimg"></a>
+
+            <a href="carrinho.html" class="nav" id="carrinho_icon"><img src="ÍCONES/HEADER/carrinho_icon.png"
+                    alt="ícone do carrinho" class="headerimg" style="margin-bottom: 8px;"></a>
+            <a href="perfil.html" class="nav" id="perfil_icon"><img src="ÍCONES/HEADER/perfil_icon.png"
+                    alt="ícone de perfil" class="headerimg"></a>
+            <a href="configuracoes.html" class="nav" id="configuracoes_icon">
+                <img src="ÍCONES/settings_icon.png" class="headerimg" alt="ícone das configurações"></a>
+
+            <div class="mobile-menu-icon">
+                <button onclick="menuShow()"><img class="icon" src="ÍCONES/menu_icon(1).png" alt="menu-icon"></button>
+            </div>
+        </div>
+
+    </header>
+    <div class="mobile-menu">
+        <ul>
+            <li class="nav-item"><a href="index.html" class="nav-link">HOME</a></li>
+            <li class="nav-item"> <a href="quemsomos.html" class="nav-link">QUEM SOMOS</a>
+            </li>
+            <li class="nav-item"><a href="ajuda.html" class="nav-link">AJUDA & FEEDBACK</a></li>
+            <li class="nav-item"><a href="receitas.html" class="nav-link">RECEITAS</a></li>
+            <li class="nav-item"> <a href="perfil.html" class="nav-link"> PERFIL</a></li>
+        </ul>
+    </div>
+    <nav>
+        <div id="menu_nav">
+            <a href="index.html">HOME</a>
+            <span class="entrenav">|</span>
+            <a href="quemsomos.html">QUEM SOMOS</a>
+            <span class="entrenav">|</span>
+            <a href="receitas.html">RECEITAS</a>
+            <span class="entrenav">|</span>
+            <a href="ajuda.html">AJUDA & FEEDBACK</a>
+        </div>
+
+    </nav>
+    <main>
+        <div id="cxgaleria">
+            <div id="cxfoto">
+                <div id="principal">
+                    <div id="ampliada">
+                        <img src="IMAGENS/POP/img02.jpg" alt="imagem6" id="imgampliada"
+                            onmouseover="ampliar('IMAGENS/POP/img02.jpg')">
+                    </div>
+                    <div id="galeria">
+                        <div class="fotogaleria">
+                            <img src="IMAGENS/POP/img02.jpg" alt="imagem1"
+                                onmouseover="ampliar('IMAGENS/POP/img02.jpg')"><!--quando clicar na imagem vai chamar o ampliar, e o foto.jpg vai cair na variável imagem-->
+                        </div>
+                        <div class="fotogaleria">
+                            <img src="IMAGENS/POP/img02.jpg" alt="imagem2"
+                                onmouseover="ampliar('IMAGENS/POP/img02.jpg')">
+                        </div>
+                        <div class="fotogaleria">
+                            <img src="IMAGENS/POP/img02.jpg" alt="imagem5"
+                                onmouseover="ampliar('IMAGENS/POP/img02.jpg')">
+                        </div>
+                        <div class="fotogaleria">
+                            <img src="IMAGENS/POP/img02.jpg" alt="imagem4"
+                                onmouseover="ampliar('IMAGENS/POP/img02.jpg')">
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+            <div id="cxpreco">
+                <div id="texto">
+                    <h1 id="nome-prod">Amigurumi do Loki-Amigurumi POP</h1>
+                    <h2 id="preco-prod">R$37,90 ou 10x de R$3,79</h2>
+                </div>
+
+                <div id="cx-quantprod">
+                    <button class="btn-quant" id="btn-mais">+</button>
+                    <div id="espaco-quantdiv"></div>
+                    <button class="btn-quant" id="btn-menos">-</button>
+                </div>
+
+                <div id="cx-frete">
+                    <div id="cx01-frete">
+                        <p>
+                            <label for="cep">CEP:</label>
+                            <input type="text" name="cep" id="cep" size="9" maxlength="10"><br>
+                            <!-- Se o tipo for number, aceitará apenas números -->
+                            <label for="estado">Estado:</label>
+                            <select name="estado" id="estado">
+                                <option value="SP">São Paulo</option>
+                                <option value="RJ">Rio de Janeiro</option>
+                                <option value="PR">Paraná</option>
+                                <option value="PA">Pará</option>
+                                <option value="MT">Mato Grosso</option>
+                                <option value="MS">Mato Grosso do Sul</option>
+                                <option value="AM">Amazonas</option>
+                                <option value="MA">Maranhão</option>
+                                <option value="RR">Roraima</option>
+                                <option value="AC">Acre</option>
+                                <option value="ES">Espírito Santo</option>
+                                <option value="MG">Minas Gerais</option>
+                            </select>
+                        </p>
+                    </div>
+                    <div id="cx02-frete">
+                        <p>
+                            <button onclick="confirmaFrete()">Calcular Frete</button>
+                        </p>
+                        <div id="mostraFrete"  style="display:none;">
+                            <p>Frete: R$0,00</p>
+                        </div>
+                    </div>
+                </div>
+                
+                <div id="cx-btn">
+                    <button onclick="buy" id="btn-compra">COMPRAR</button>
+                    <button id="btn-add-carrinho"><img src="ÍCONES/icon-addcarrinho.png" alt="ícone de adicionar ao carrinho"></button>
+                    <button id="btn-add-favoritos"> <img src="ÍCONES/favoritos_icon.png" alt="ícone de adicionar aos favoritos">
+                    </button>
+                </div>
+                            </div>
+        </div>
+        <div id="cxinfo">
+            <h1>Informações do Produto</h1>
+            <h3>Nome do Produto: Amigurumi do Loki</h3>
+            <h3>Cores: Dourado, verde</h3>
+            <h3>Altura: 25cm</h3>
+            <h3>Largura: 10cm</h3>
+            <h3>Matéria Prima: Lã de algodão, enchimento de fibra e olhos de plástico</h3>
+        </div>
+            <div id="cxavalia">
+                <div id="cx-estrela">
+                    <div>
+                        <h3>Avaliação de Produtos</h3>
+                    </div>
+                    <div id="cx-classificacao">
+                        <div class="avalia-estrela">Todos</div>
+                        <span class="entrenav">|</span>
+                        <div class="avalia-estrela">5 Estrelas</div>
+                        <span class="entrenav">|</span>
+                        <div class="avalia-estrela">4 Estrelas</div>
+                        <span class="entrenav">|</span>
+                        <div class="avalia-estrela">3 Estrelas</div>
+                        <span class="entrenav">|</span>
+                        <div class="avalia-estrela">2 Estrelas</div>
+                        <span class="entrenav">|</span>
+                        <div class="avalia-estrela">1 Estrela</div>
+                    </div>
+                    
+    
+    
+                </div>
+                <div id="cx-coment"></div>
+    
+            </div>
+    
+    
+    
+            <div id="cxanuncio">
+                <a href="pop.html" id="link-voltar"><h3>Veja produtos similares:</h3></a>
+    
+                <div class="cxtipo" id="cxtipo1">
+                    <button id="prevBtn1" class="btn-arrasta"><img src="ÍCONES/setaesquerda_icon.png" class="imgarrasta"
+                            alt="prevBtn"></button>
+                            <div class="carousel-slide">
+                                <div class="divcxprod">
+                                    <div class="cxprod-separa">
+                                        <div class="cxprod">
+                                            <div class="cxprod-img">
+                                                <img src="IMAGENS/POP/img01.jpg" alt="Imagem do Produto">
+                                            </div>
+                                            <div class="cxprod-info">
+                                                <div class="cxprod-prec-btn">
+                                                    <div class="preco-div">
+                                                        <h5>R$95,50</h5>
+                                                    </div>
+                                                    <div class="btn-fav">
+                                                        <button class="favoritar"><img src="ÍCONES/favoritos_icon.png"
+                                                                alt="botãofavorito"></button>
+                                                    </div>
+                                                </div>
+                                                <div class="cxprod-nome">
+                                                    <a href="produto-pop01.html">Amigurumi de Monstros SA-<br>Amigurumi POP</a>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="cxprod">
+                                            <div class="cxprod-img">
+                                                <img src="IMAGENS/POP/img02.jpg" alt="Imagem do Produto">
+                                            </div>
+                                            <div class="cxprod-info">
+                                                <div class="cxprod-prec-btn">
+                                                    <div class="preco-div">
+                                                        <h5>R$37,90</h5>
+                                                    </div>
+                                                    <div class="btn-fav">
+                                                        <button class="favoritar"><img src="ÍCONES/favoritos_icon.png"
+                                                                alt="botãofavorito"></button>
+                                                    </div>
+                                                </div>
+                                                <div class="cxprod-nome">
+                                                    <a href="produto-pop02.html">Amigurumi do Loki-<br>Amigurumi POP</a>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                
+                                    <div class="cxprod-separa">
+                                        <div class="cxprod">
+                                            <div class="cxprod-img">
+                                                <img src="IMAGENS/POP/img03.jpg" alt="Imagem do Produto">
+                                            </div>
+                                            <div class="cxprod-info">
+                                                <div class="cxprod-prec-btn">
+                                                    <div class="preco-div">
+                                                        <h5>R$43,50</h5>
+                                                    </div>
+                                                    <div class="btn-fav">
+                                                        <button class="favoritar"><img src="ÍCONES/favoritos_icon.png"
+                                                                alt="botãofavorito"></button>
+                                                    </div>
+                                                </div>
+                                                <div class="cxprod-nome">
+                                                    <a href="produto-pop03.html">Amigurumi do Chapeleiro Maluco-<br>Amigurumi POP</a>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="cxprod">
+                                            <div class="cxprod-img">
+                                                <img src="IMAGENS/POP/img04.jpg" alt="Imagem do Produto">
+                                            </div>
+                                            <div class="cxprod-info">
+                                                <div class="cxprod-prec-btn">
+                                                    <div class="preco-div">
+                                                        <h5>R$94,60</h5>
+                                                    </div>
+                                                    <div class="btn-fav">
+                                                        <button class="favoritar"><img src="ÍCONES/favoritos_icon.png"
+                                                                alt="botãofavorito"></button>
+                                                    </div>
+                                                </div>
+                                                <div class="cxprod-nome">
+                                                    <a href="produto-pop04.html">Amigurumi do Urso sem Curso-<br>Amigurumi POP</a>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                
+                            <div class="carousel-slide">
+                                <div class="divcxprod">
+                                    <div class="cxprod-separa">
+                                        <div class="cxprod">
+                                            <div class="cxprod-img">
+                                                <img src="IMAGENS/POP/img05.jpg" alt="Imagem do Produto">
+                                            </div>
+                                            <div class="cxprod-info">
+                                                <div class="cxprod-prec-btn">
+                                                    <div class="preco-div">
+                                                        <h5>R$39,90</h5>
+                                                    </div>
+                                                    <div class="btn-fav">
+                                                        <button class="favoritar"><img src="ÍCONES/favoritos_icon.png"
+                                                                alt="botãofavorito"></button>
+                                                    </div>
+                                                </div>
+                                                <div class="cxprod-nome">
+                                                    <a href="produto-pop05.html">Amigurumi do Snoopy-<br>Amigurumi POP</a>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="cxprod">
+                                            <div class="cxprod-img">
+                                                <img src="IMAGENS/POP/img06.jpg" alt="Imagem do Produto">
+                                            </div>
+                                            <div class="cxprod-info">
+                                                <div class="cxprod-prec-btn">
+                                                    <div class="preco-div">
+                                                        <h5>R$50,00</h5>
+                                                    </div>
+                                                    <div class="btn-fav">
+                                                        <button class="favoritar"><img src="ÍCONES/favoritos_icon.png"
+                                                                alt="botãofavorito"></button>
+                                                    </div>
+                                                </div>
+                                                <div class="cxprod-nome">
+                                                    <a href="produto-pop6.html">Amigurumi da Frida-<br>Amigurumi POP</a>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="cxprod-separa">
+                                        <div class="cxprod">
+                                            <div class="cxprod-img">
+                                                <img src="IMAGENS/POP/img07.jpg" alt="Imagem do Produto">
+                                            </div>
+                                            <div class="cxprod-info">
+                                                <div class="cxprod-prec-btn">
+                                                    <div class="preco-div">
+                                                        <h5>R$49,99</h5>
+                                                    </div>
+                                                    <div class="btn-fav">
+                                                        <button class="favoritar"><img src="ÍCONES/favoritos_icon.png"
+                                                                alt="botãofavorito"></button>
+                                                    </div>
+                                                </div>
+                                                <div class="cxprod-nome">
+                                                    <a href="produto-pop07.html">Amigurumi do VanGogh-<br>Amigurumi POP</a>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="cxprod">
+                                            <div class="cxprod-img">
+                                                <img src="IMAGENS/POP/img08.jpg" alt="Imagem do Produto">
+                                            </div>
+                                            <div class="cxprod-info">
+                                                <div class="cxprod-prec-btn">
+                                                    <div class="preco-div">
+                                                        <h5>R$45,55</h5>
+                                                    </div>
+                                                    <div class="btn-fav">
+                                                        <button class="favoritar"><img src="ÍCONES/favoritos_icon.png"
+                                                                alt="botãofavorito"></button>
+                                                    </div>
+                                                </div>
+                                                <div class="cxprod-nome">
+                                                    <a href="produto-pop08.html">Amigurumi do Pequeno Principe-<br>Amigurumi POP</a>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                    <button id="nextBtn1" class="btn-arrasta"><img src="ÍCONES/setadireita_icon.png" class="imgarrasta"
+                            alt="nextBtn"></button>
+    
+    
+                </div>
+            </div>
+        </main>
+    
+        <footer>
+            <div id="cxfooter1">
+                <div class="cxfooter" id="menu_footer">
+    
+                    <a href="index.html">HOME</a>
+    
+                    <a href="quemsomos.html">QUEM SOMOS</a>
+    
+                    <a href="receitas.html">RECEITAS</a>
+    
+                    <a href="ajuda.html">AJUDA & FEEDBACK</a>
+    
+                </div>
+                <div class="cxfooter" id="quemsomos">
+                    <h5>DAISUKI ATELIÊ</h5>
+                    <p>Somos um ateliê criativo dedicado a produzir diversas peças únicas. <br>
+                        Nossa paixão pelo artesanato nos motiva a criar objetos que expressam beleza e "daisuki", o
+                        amor.</p>
+                </div>
+    
+            </div>
+            <div id="cxfooter2"></div>
+            <div id="cxfooter3">
+                <div class="cxfooter3" id="cxdireitos">
+    
+                    <div id="copyr-cx"></div>
+                    <p>Copyright &copy; DAISUKI ATELIÊ</p>
+                    <a href="#">Termos de Uso</a>
+                    <span class="entrenav">|</span>
+                    <a href="#">Política de Privacidade</a>
+    
+                </div>
+                <div class="cxfooter3" id="cxredes">
+                    <a href="https://www.instagram.com/daisuki.atelie/"><img src="ÍCONES/insta_icon.png" alt="instagram"
+                            class="redesimg" id="insta_icon"></a>
+                    <a href="#"><img src="ÍCONES/what_icon.png" alt="whats" class="redesimg" id="what_icon"></a>
+                    <a href="#"><img src="ÍCONES/face_icon.png" alt="facebook" class="redesimg" id="face_icon"></a>
+                </div>
+            </div>
+        </footer>
+    
+        <script src="produto.js">
+        </script>
+    
+    
+    </html>
