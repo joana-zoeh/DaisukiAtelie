@@ -1,0 +1,160 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Daisuki Atelier</title>
+    <link rel="stylesheet" href="ajuda.css">
+
+</head>
+
+<body>
+    <header>
+
+        <a href="index.html" id="titulo">DAISUKI ATELIER</a>
+
+        <div class="search-box">
+            <input type="text" placeholder="Pesquisa">
+            <img src="ÍCONES/HEADER/pesquisa_icon.png" alt="ícone de pesquisa" id="pesquisa_icon" class="headerimg">
+        </div>
+        <div id="icon_header">
+            <a href="favoritos_ingles.html" id="favoritos_icon"><img src="ÍCONES/favoritos_icon.png"
+                    alt="ícone de favoritos" class="headerimg"></a>
+
+            <a href="carrinho_ingles.html" class="nav" id="carrinho_icon"><img src="ÍCONES/HEADER/carrinho_icon.png"
+                    alt="ícone do carrinho" class="headerimg" style="margin-bottom: 8px;"></a>
+            <a href="perfil_ingles.html" class="nav" id="perfil_icon"><img src="ÍCONES/HEADER/perfil_icon.png"
+                    alt="ícone de perfil" class="headerimg"></a>
+            <a href="configuracoes_ingles.html" class="nav" id="configuracoes_icon">
+                <img src="ÍCONES/settings_icon.png" class="headerimg" alt="ícone das configurações"></a>
+
+            <div class="mobile-menu-icon">
+                <button onclick="menuShow()"><img class="icon" src="ÍCONES/menu_icon(1).png" alt="menu-icon"></button>
+            </div>
+        </div>
+
+    </header>
+    <div class="mobile-menu">
+        <ul>
+            <li class="nav-item"><a href="index.html" class="nav-link">HOME</a></li>
+            <li class="nav-item"> <a href="quemsomos.html" class="nav-link">ABOUT US</a>
+            </li>
+            <li class="nav-item"><a href="ajuda_ingles.html" class="nav-link">HELP & FEEDBACK</a></li>
+            <li class="nav-item"><a href="receitas_ingles.html" class="nav-link">RECIPES</a></li>
+            <li class="nav-item"> <a href="perfil_ingles.html" class="nav-link"> PROFILE</a></li>
+        </ul>
+    </div>
+    <nav>
+        <div id="menu_nav">
+            <a href="index_ingles.html">HOME</a>
+            <span class="entrenav">|</span>
+            <a href="quemsomos_ingles.html">ABOUT US</a>
+            <span class="entrenav">|</span>
+            <a href="receitas_ingles.html">RECIPES</a>
+            <span class="entrenav">|</span>
+            <a href="ajuda_ingles.html">HELP & FEEDBACK</a>
+        </div>
+    </nav>
+    <main>
+        <h1>Do you have any questions or suggestions?</h1>
+
+        <br>
+
+
+        <div id="cxajuda">
+            <form action="dados.jsp">
+                <p id="tituloforms">Fill out the form and send it to us!</p>
+                <p>
+                    <label for="nome">Name:</label>
+                    <input type="text" name="nome" id="nome" size="70" maxlength="10" required>
+                    <!--se type for = number só vai aceitar n[um]-->
+                </p>
+                <br>
+
+                <p class="quebracel">
+                    <label for="telefone">Telephone:</label>
+                    <input type="tel" name="telefone" id="telefone" size="14" maxlength="14">
+                    <!--se type for = number só vai aceitar n[um]-->
+                </p>
+                <br>
+                <p>
+                    <label for="email">Email:</label>
+                    <input type="email" name="email" id="email" size="70" maxlength="40">
+                    <!--se type for = number só vai aceitar n[um]-->
+                </p>
+                <br>
+
+                <p>
+                    <label id="comentlabel">Comment:</label><br>
+
+                    <textarea name="Comentario" id="comentario" cols="90" maxlength="1000"></textarea>
+
+                </p>
+                <br>
+
+                <div id="botaoenviar">
+
+                    <p>
+                        <input type="submit" value="Send">
+                    </p>
+                </div>
+
+            </form>
+        </div>
+
+        <!--<h1 style="color: #49536d;">Perguntas frequentes:</h1>-->
+
+        <div>
+
+        </div>
+
+    </main>
+
+    <footer>
+        <div id="cxfooter1">
+            <div class="cxfooter" id="menu_footer">
+
+                <a href="index_ingles.html">HOME</a>
+
+                <a href="quemsomos_ingles.html">ABOUT US</a>
+
+                <a href="receitas_ingles.html">RECIPES</a>
+
+                <a href="ajuda.html">HELP & FEEDBACK</a>
+
+            </div>
+            <div class="cxfooter" id="quemsomos">
+                <h5>DAISUKI ATELIER</h5>
+                <p>We are a creative atelier dedicated to producing various unique pieces. <br>
+                    Our passion for craftsmanship motivates us to create objects that express beauty and "daisuki," the
+                    love.</p>
+            </div>
+        </div>
+        <div id="cxfooter2"></div>
+        <div id="cxfooter3">
+            <div class="cxfooter3" id="cxdireitos">
+
+                <div id="copyr-cx"></div>
+                <p>Copyright &copy; DAISUKI ATELIER</p>
+                <a href="#">Terms of Use</a>
+                <span class="entrenav">|</span>
+                <a href="#">Privacy Policy</a>
+
+            </div>
+
+
+            <div class="cxfooter3" id="cxredes">
+                <a href="https://www.instagram.com/daisuki.atelie/"><img src="ÍCONES/insta_icon.png" alt="instagram"
+                        class="redesimg" id="insta_icon"></a>
+                <a href="#"><img src="ÍCONES/what_icon.png" alt="whats" class="redesimg" id="what_icon"></a>
+                <a href="#"><img src="ÍCONES/face_icon.png" alt="facebook" class="redesimg" id="face_icon"></a>
+            </div>
+        </div>
+    </footer>
+
+    <script src="ajuda-sript.js"></script>
+
+</body>
+
+</html>

@@ -1,0 +1,152 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Daisuki Ateliê</title>
+    <link rel="stylesheet" href="configuracoes.css">
+
+
+</head>
+
+<body>
+    <header>
+
+        <a href="index.html" id="titulo">DAISUKI ATELIÊ</a>
+
+        <div class="search-box">
+            <input type="text" placeholder="Pesquisa">
+            <img src="ÍCONES/HEADER/pesquisa_icon.png" alt="ícone de pesquisa" id="pesquisa_icon" class="headerimg">
+        </div>
+        <div id="icon_header">
+            <a href="favoritos.html" id="favoritos_icon"><img src="ÍCONES/favoritos_icon.png" alt="ícone de favoritos"
+                    class="headerimg"></a>
+
+            <a href="carrinho.html" class="nav" id="carrinho_icon"><img src="ÍCONES/HEADER/carrinho_icon.png"
+                    alt="ícone do carrinho" class="headerimg" style="margin-bottom: 8px;"></a>
+            <a href="perfil.html" class="nav" id="perfil_icon"><img src="ÍCONES/HEADER/perfil_icon.png"
+                    alt="ícone de perfil" class="headerimg"></a>
+            <a href="configuracoes.html" class="nav" id="configuracoes_icon">
+                <img src="ÍCONES/settings_icon.png" class="headerimg" alt="ícone das configurações"
+                    ></a>
+
+            <div class="mobile-menu-icon">
+                <button onclick="menuShow()"><img class="icon" src="ÍCONES/menu_icon(1).png" alt="menu-icon"></button>
+            </div>
+        </div>
+
+    </header>
+    <div class="mobile-menu">
+        <ul>
+            <li class="nav-item"><a href="index.html" class="nav-link">HOME</a></li>
+            <li class="nav-item"> <a href="quemsomos.html" class="nav-link">QUEM SOMOS</a>
+            </li>
+            <li class="nav-item"><a href="ajuda.html" class="nav-link">AJUDA & FEEDBACK</a></li>
+            <li class="nav-item"><a href="receitas.html" class="nav-link">RECEITAS</a></li>
+            <li class="nav-item"> <a href="perfil.html" class="nav-link"> PERFIL</a></li>
+        </ul>
+    </div>
+    <nav>
+        <div id="menu_nav">
+            <a href="index.html">HOME</a>
+            <span class="entrenav">|</span>
+            <a href="quemsomos.html">QUEM SOMOS</a>
+            <span class="entrenav">|</span>
+            <a href="receitas.html">RECEITAS</a>
+            <span class="entrenav">|</span>
+            <a href="ajuda.html">AJUDA & FEEDBACK</a>
+        </div>
+
+    </nav>
+    <main>
+        <div id="cx-config">
+            <div id="cx-titulo">
+                <h1 id="titulo-config">CONFIGURAÇÕES</h1>
+            </div>
+            <div id="cx-conteudo">
+                <div class="item-conteudo" >
+
+                    <img src="ÍCONES/perfil.png" class="img-itemconteudo" alt="ícone do perfil">
+                    <a href="perfil.html" class="link-itemconteudo">Username</a>
+                </div>
+                <div class="separa-item"></div>
+
+                <div class="item-conteudo">
+                    <button id="btn_modoescuro" onclick="" class="btn-cxcunteudo">
+                        <img src="ÍCONES/modbranco_icon.png" alt="icone modo branco">
+                    </button>
+                </div>
+                <div class="separa-item"></div>
+
+                <div class="item-conteudo">
+                    <button onclick="window.location.href='configuracoes_ingles.html'" id="btn-mudaidioma" class="btn-cxcunteudo">
+                        
+                        <img src="ÍCONES/icon_port-br.png" alt="imagem da bandeira  da língua">
+                    </button>
+                </div>
+                <div class="separa-item"></div>
+
+                <div class="item-conteudo" >
+                    <img src="ÍCONES/cupom_icon.png" alt="icone de cupom" class="img-itemconteudo">
+                    <a href="cupons.html" class="link-itemconteudo">Cupons</a>
+                </div>
+                <div class="separa-item"></div>
+                
+                <div class="item-conteudo" >
+                    <img src="ÍCONES/HEADER/carrinho_icon.png" alt="icone de carrinho" class="img-itemconteudo">
+                    <a href="carrinho.html" class="link-itemconteudo">Carrinho</a>
+
+                </div>
+
+            </div>
+        </div>
+    </main>
+
+    <footer>
+        <div id="cxfooter1">
+            <div class="cxfooter" id="menu_footer">
+
+                <a href="index.html">HOME</a>
+
+                <a href="quemsomos.html">QUEM SOMOS</a>
+
+                <a href="receitas.html">RECEITAS</a>
+
+                <a href="ajuda.html">AJUDA & FEEDBACK</a>
+
+            </div>
+            <div class="cxfooter" id="quemsomos">
+                <h5>DAISUKI ATELIÊ</h5>
+                <p>Somos um ateliê criativo dedicado a produzir diversas peças únicas. <br>
+                    Nossa paixão pelo artesanato nos motiva a criar objetos que expressam beleza e "daisuki", o
+                    amor.</p>
+            </div>
+
+        </div>
+        <div id="cxfooter2"></div>
+        <div id="cxfooter3">
+            <div class="cxfooter3" id="cxdireitos">
+
+                <div id="copyr-cx"></div>
+                <p>Copyright &copy; DAISUKI ATELIÊ</p>
+                <a href="#">Termos de Uso</a>
+                <span class="entrenav">|</span>
+                <a href="#">Política de Privacidade</a>
+
+            </div>
+            <div class="cxfooter3" id="cxredes">
+                <a href="https://www.instagram.com/daisuki.atelie/"><img src="ÍCONES/insta_icon.png"
+                        alt="instagram" class="redesimg" id="insta_icon"></a>
+                <a href="#"><img src="ÍCONES/what_icon.png" alt="whats" class="redesimg" id="what_icon"></a>
+                <a href="#"><img src="ÍCONES/face_icon.png" alt="facebook" class="redesimg" id="face_icon"></a>
+            </div>
+        </div>
+    </footer>
+
+    <script src="configuracoes-script.js">
+    </script>
+</body>
+
+
+<!--tirar odata ride para o carrossel tirar sozinho-->
