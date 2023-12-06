@@ -660,16 +660,19 @@ footer div#cxfooter3 {
         flex-direction: column;
         text-align: center;
         border-radius: 5px;
-        transition: 0.5s;
-        cursor: pointer;
+
+    }
+
+    div.cxprod:hover {
+        width: 50%;
+        height: 340px;
+
+
     }
 
     div.cxprod-info {
-        flex-direction: column;
-        color: #a67caa;
-        display: flex;
-        height: 30%;
-        width: 100%;
+        width: 50%;
+        height: 340px;
     }
 
     div.cxprod-prec-btn {

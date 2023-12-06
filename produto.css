@@ -961,8 +961,13 @@ border-top-left-radius: 5px;
         flex-direction: column;
         text-align: center;
         border-radius: 5px;
-        transition: 0.5s;
-        cursor: pointer;
+
+    }
+
+    div.cxprod:hover{
+        background-color: #f8f8f8;
+        width: 50%;
+        height: 340px;
     }
 
     div.cxprod-info {
@@ -1078,7 +1083,7 @@ border-top-left-radius: 5px;
     }
 
     #cx-classifica div {
-        margin: 5px;
+        margin: 4px;
     }
 
     div#cx-classificacao {
@@ -1088,7 +1093,7 @@ border-top-left-radius: 5px;
     }
 
     div#cx-classificacao {
-        font-size: 15px;
+        font-size: 13px;
     }
 
     div#cxinfo {
@@ -1154,12 +1159,8 @@ border-top-left-radius: 5px;
 
     }
 
-    #ampliada img {
-        height: 450px;
-    }
-
     .fotogaleria img {
-        height: 100px;
+        height: 90px;
         margin: 5px;
         border-radius: 10px;
     }

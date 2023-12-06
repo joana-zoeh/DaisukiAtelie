@@ -721,8 +721,12 @@ footer div#cxfooter3 {
         flex-direction: column;
         text-align: center;
         border-radius: 5px;
-        transition: 0.5s;
-        cursor: pointer;
+    }
+
+    div.cxprod:hover{
+        background-color: #f8f8f8;
+        width: 50%;
+        height: 340px;
     }
 
     div.cxprod-info {
